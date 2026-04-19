@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的GitHub个人博客</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            font-family: 微软雅黑, sans-serif;
+        }
+        .img-box {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 500px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ 我的个人博客主页</h1>
+    <p>本次Github Pages静态博客发布实验</p>
+    <hr>
+
+    <h2>一、绝对路径引用图片（实验要求1）</h2>
+    <p>图片地址为完整外网http/https网络地址，直接引用线上图片</p>
+    <div class="img-box">
+        <!-- 绝对路径：完整公开网络URL，符合实验要求 -->
+        <img src="https://picsum.photos/id/237/500/300" alt="绝对路径示例图片">
+    </div>
+
+    <hr>
+
+    <h2>二、相对路径引用图片（实验要求2）</h2>
+    <p>图片放在自己仓库的image文件夹内，使用相对路径调用</p>
+    <div class="img-box">
+        <!-- 相对路径：同仓库内路径，符合../image/xxx 要求 -->
+        <img src="./image/blog.jpg" alt="相对路径本地图片">
+    </div>
+
+
+</body>
+</html>
